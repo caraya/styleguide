@@ -1,0 +1,18 @@
+h2 {
+    font-size: 2.25em;
+    line-height: 1.25;
+}
+
+.inverse {
+    background-color: #000000;
+    color: #ffffff;
+    box-sizing: content-box;
+    padding: .25em;
+}
+
+@media screen and (min-width: 37.5em) and (max-width: 50em) and (-webkit-min-device-pixel-ratio: 1) {
+    h2 {
+        font-size: 2em;
+        line-height: 1.25;
+    }
+}

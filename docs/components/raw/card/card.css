@@ -1,0 +1,17 @@
+.card {
+    border: 1px solid rebeccapurple;
+}
+
+.card-header {
+    background-color: lightgrey;
+    color: white;
+    padding: .125em;
+}
+
+.card-body {
+    padding: .5em;
+}
+
+.card-footer {
+    padding: .5em;
+}
