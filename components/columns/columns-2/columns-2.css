@@ -1,0 +1,7 @@
+/* Column predefined classes */
+.columns-2 {
+    column-count: 2;
+    -webkit-column-gap: 2em;
+    -moz-column-gap: 2em;
+    column-gap: 2em;
+}

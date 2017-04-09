@@ -1,0 +1,14 @@
+.columns-20em-fixed {
+    -webkit-column-width: 20em;
+    -moz-column-width: 20em;
+    column-width: 20em;
+    -webkit-column-gap: 1em;
+    -moz-column-gap: 1em;
+    column-gap: 1em;
+    -webkit-column-fill: balance;
+    -moz-column-fill: balance;
+    column-fill: balance;
+    -webkit-column-span: none;
+    -moz-column-span: none;
+    column-span: none;
+}

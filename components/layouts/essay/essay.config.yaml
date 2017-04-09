@@ -1,0 +1,5 @@
+preview: "@full"
+notes: "Need to get more info on how to regulate the height of children in css grid layout, it's good for now but I'm not feeling like redoing the css everytime the size of the title changes.\n\nThis layout is not responsive... it's not meant to be as it's a proof of content that we'll iterate on"
+context:
+  essay-title: "Ghost in the Shell: Analysis and Review"
+  title: "Ghost in the Shell: Analysis and Review"

@@ -1,0 +1,7 @@
+context:
+  gallery-title: "Project Gallery"
+  title: "Sample Project"
+  body-content: "This is sample content for the card. more sample conent but can't do HTML from YAML"
+  footer-content: "Optional content for the footer"
+notes: "Do I want to keep the width of the card or define it in the layout components?"
+status: idea
