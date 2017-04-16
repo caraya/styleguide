@@ -1,0 +1,53 @@
+/* Column predefined classes */
+.columns-2 {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 2em;
+  -moz-column-gap: 2em;
+  column-gap: 2em;
+  -webkit-column-fill: balance;
+  -moz-column-fill: balance;
+  column-fill: balance;
+  -moz-column-span: none;
+  column-span: none;
+}
+
+.columns-3 {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  column-gap: 1em;
+  -moz-column-fill: balance;
+  column-fill: balance;
+  -moz-column-span: none;
+  column-span: none;
+}
+
+.columns-20em-fixed {
+  -webkit-column-width: 20em;
+  -moz-column-width: 20em;
+  column-width: 20em;
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  column-gap: 1em;
+  -moz-column-fill: balance;
+  column-fill: balance;
+  -moz-column-span: none;
+  column-span: none;
+}
+
+.columns-10em-fixed {
+  -webkit-column-width: 10em;
+  -moz-column-width: 10em;
+  column-width: 10em;
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  column-gap: 1em;
+  -moz-column-fill: balance;
+  column-fill: balance;
+  -moz-column-span: none;
+  column-span: none;
+}

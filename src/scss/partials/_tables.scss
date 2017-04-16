@@ -1,0 +1,20 @@
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table tbody {
+  border: 1px solid black;
+}
+table tbody tr:nth-child(even) {
+  background-color: #9e9e9e;
+}
+table th {
+  border: 1px solid black;
+  font-family: notosans-bold, verdana, sans-serif;
+  text-align: center;
+}
+table td {
+  border: 1px solid black;
+}
+

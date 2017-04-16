@@ -1,0 +1,70 @@
+/* color variable definitions to test */
+:root {
+  --palette-1-color1: rgba(9, 64, 116, 1);
+  --palette-1-color2: rgba(197, 209, 235, 1);
+  --palette-1-color3: rgba(146, 175, 215, 1);
+  --palette-1-color4: rgba(90, 118, 132, 1);
+  --palette-1-color5: rgba(28, 35, 33, 1);
+
+  --palette-2-color1: rgba(252, 236, 201, 1);
+  --palette-2-color2: rgba(252, 176, 179, 1);
+  --palette-2-color3: rgba(249, 57, 67, 1);
+  --palette-2-color4: rgba(126, 178, 221, 1);
+  --palette-2-color5: rgba(68, 94, 147, 1);
+
+}
+
+// We may eventually want to move the variables below into a generic palette
+// to include in the root element defined above
+
+//Greens
+$turqoise: #1abc9c;
+$green-sea: #16a085;
+$emerald: #2ecc71;
+$nephritis: #27ae60;
+$green: #4caf50;
+$light-green: #8bc34a;
+$lime: #cddc39;
+//Blues
+$river: #3498db;
+$belize: #2980b9;
+$asphalt: #34495e;
+$midnight-blue: #2c3e50;
+$blue: #2196f3;
+$light-blue: #03a9f4;
+$cyan: #00bcd4;
+$teal: #009688;
+//Reds
+$red: #cc092f;
+$alizarin: #e74c3c;
+$pomegranate: #c0392b;
+$red2: #f44336;
+//Oranges
+$carrot: #e67e22;
+$pumpkin: #d35400;
+$dull-orange: #f39c12;
+$orange: #ff9800;
+$blood-orange: #ff5722;
+$amber: #ffc107;
+//Yellows
+$sunflower: #f1c40f;
+$yellow: #ffeb3b;
+//Purples + Pinks
+$amethyst: #9b59b6;
+$plum: #8e44ad;
+$purple: #9c27b0;
+$rebecca-purple: #663399;
+$deep-purple: #673ab7;
+$pink: #e91e63;
+$indigo: #3f51b5;
+//Browns
+$brown: #795548;
+//Greys
+$grey: #9e9e9e;
+$gun-metal: #607d8b;
+$asbestos: #7f8c8d;
+$concrete: #95a5a6;
+$silver: #bdc3c7;
+//Whites
+$clouds: #ecf0f1;
+$paper: #efefef;

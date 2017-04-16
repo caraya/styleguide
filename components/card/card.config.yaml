@@ -1,6 +1,2 @@
-context:
-  body-content: "This is sample content for the card. more sample conent but can't do HTML from YAML"
-  footer-content: "Optional content for the footer"
-  title: "Sample Project"
 notes: "It appears that you must set an explicit width for flexbox to work"
 status: idea

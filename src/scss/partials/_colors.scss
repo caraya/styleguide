@@ -1,0 +1,61 @@
+@import 'root';
+
+.palette1,
+.palette2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    width: 800px;
+}
+.swatch {
+    border-radius:50px;
+    text-align: center;
+    vertical-align: text-bottom;
+    height: 100px;
+    width: 100px;
+}
+
+.color-item p {
+    font-size: 75%;
+}
+.p1-swatch1 {
+  background-color: var(--palette-1-color1);
+}
+
+.p1-swatch2 {
+  background-color: var(--palette-1-color2);
+}
+
+.p1-swatch3 {
+  background-color: var(--palette-1-color3);
+}
+
+.p1-swatch4 {
+  background-color: var(--palette-1-color4);
+}
+
+.p1-swatch5 {
+  background-color: var(--palette-1-color5);
+}
+
+.p2-swatch1 {
+  background-color: var(--palette-2-color1);
+}
+
+.p2-swatch2 {
+  background-color: var(--palette-2-color2);
+}
+
+.p2-swatch3 {
+  background-color: var(--palette-2-color3);
+}
+
+.p2-swatch4 {
+  background-color: var(--palette-2-color4);
+}
+
+.p2-swatch5 {
+  background-color: var(--palette-2-color5);
+}
+

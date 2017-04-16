@@ -1,0 +1,60 @@
+/* Default body style */
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.375;
+}
+
+/* This will match if the fonts failed to load. It is identical to the default but doesn't have to be*/
+.fonts-failed body {
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.375;
+}
+
+/* This will match when fonts load successfully */
+.fonts-loaded body {
+  font-family: notosans-regular, verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.375;
+}
+
+.container {
+  width: 48em;
+}
+
+em,
+i {
+  font-family: notosans-italic;
+  font-style: italic;
+}
+
+em em {
+  font-family: notosans-regular, verdana, sans-serif;
+}
+
+strong,
+b {
+  font-family: notosans-bold;
+  font-weight: 700;
+}
+
+strong em,
+em, strong {
+  font-family: notosans-bolditalic;
+  font-weight: 700;
+  font-style: italic;
+}
+
+code {
+  background-color: #ededed;
+  font-family: notomono-regular, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+/* Handling blockquotes */
+blockquote {
+  font-size: 1.25em;
+  line-height: 1.458333;
+  border-left: 0.5em solid #607d8b;
+  padding-left: 1.5em;
+}

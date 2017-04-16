@@ -1,0 +1,17 @@
+/* Informational messages */
+.message {
+  border: 1px solid black;
+  border-radius: 10px;
+  display: block;
+  padding: .5em;
+  margin: 1em 0;
+}
+.message.info {
+  background-color: lightblue;
+}
+.message.warning {
+  background-color: lightyellow;
+}
+.message.danger {
+  background-color: indianred;
+}
