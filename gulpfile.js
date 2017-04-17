@@ -10,14 +10,10 @@ const   $ = require('gulp-load-plugins')({lazy: true});
 const browserSync = require('browser-sync');
 const reload = browserSync.reload;
 const historyApiFallback = require('connect-history-api-fallback');
-
 // postcss
 const postcss = require('gulp-postcss');
-// cleanCSS
-const cleanCSS = require('gulp-clean-css');
 // Autoprefixer
 const autoprefixer = require('autoprefixer');
-
 // SASS
 const sass = require('gulp-ruby-sass');
 // SASSDoc
@@ -70,7 +66,10 @@ const AUTOPREFIXER_BROWSERS = [
  * @see {@link http://sass-compatibility.github.io/|SASS Feature Compatibility}
  */
 gulp.task('sass:dev', () =>{
-  return sass('src/sass/**/*.scss', { sourcemap: true, style: 'expanded'})
+  return sass('src/scss/**/*.scss', {
+    sourcemap: true,
+    style: 'expanded'
+  })
   .pipe(gulp.dest('src/css'))
   .pipe($.size({
     pretty: true,
@@ -212,9 +211,9 @@ gulp.task('babel', () =>{
  * @description Runs eslint on all javascript files
  */
 gulp.task('eslint', () =>{
-  return
-  gulp.src([
-    'scr/scripts/**/*.js'
+  return gulp.src([
+    'scr/scripts/**/*.js',
+    '!src/scripts/vendor'
   ])
   .pipe($.eslint())
   .pipe($.eslint.format())
@@ -243,7 +242,7 @@ gulp.task('jsdoc', () =>{
  * @see {@link processImages}
  */
 gulp.task('imagemin', () =>{
-  return gulp.src('src/images/originals/**')
+  return gulp.src('src/images/originals/**/*.{gif,jpg,png,svg}')
   .pipe(imagemin({
     progressive: true,
     svgoPlugins: [
@@ -252,7 +251,7 @@ gulp.task('imagemin', () =>{
     ],
     use: [mozjpeg()]
   }))
-  .pipe(gulp.dest('src/images'))
+  .pipe(gulp.dest('css/images'))
   .pipe($.size({
     pretty: true,
     title: 'imagemin'
@@ -378,12 +377,9 @@ gulp.task('processImages', () =>{
  */
 gulp.task('clean', () =>{
   return del.sync([
-    'dist/',
-    '.tmp',
-    'src/html-content',
-    'src/*.html',
-    'src/pm-content',
-    'src/pdf'
+    'public/scripts/*.js',
+    'public/images/**/*',
+    'public/styles/**/*'
   ]);
 });
 
@@ -392,24 +388,32 @@ gulp.task('axe', (done) => {
   var options = {
     saveOutputIn: './a11yReport.json',
     browser: 'phantomjs',
-    urls: ['src/*.html']
+    urls: ['components/**/*.html']
   };
   return axe(options, done);
 });
 
-gulp.task('snyk-auth', function(cb){
+gulp.task('snyk-auth', function(done){
   return snyk({
     command: 'auth',
-    debug: true, cb
-  })
+    options: {
+  
+      debug: true,
+      dev: true
+    }
+  }, done)
 });
 
-gulp.task('protect', function(cb) {
+gulp.task('protect', function(done) {
   return snyk({
     command: 'protect',
-    debug: true,
-    test: true, cb
-  })
+    options: {
+      
+      debug: true,
+      dev: true
+    }
+  }, done)
+  
 });
 
 gulp.task('test', function (done) {
