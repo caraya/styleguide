@@ -1,0 +1,923 @@
+/* Default body style */
+/* line 2, src/scss/partials/_generic.scss */
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.375;
+}
+
+/* This will match if the fonts failed to load. It is identical to the default but doesn't have to be*/
+/* line 9, src/scss/partials/_generic.scss */
+.fonts-failed body {
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.375;
+}
+
+/* This will match when fonts load successfully */
+/* line 16, src/scss/partials/_generic.scss */
+.fonts-loaded body {
+  font-family: notosans-regular, verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.375;
+}
+
+/* line 22, src/scss/partials/_generic.scss */
+.container {
+  width: 48em;
+}
+
+/* line 26, src/scss/partials/_generic.scss */
+em,
+i {
+  font-family: notosans-italic;
+  font-style: italic;
+}
+
+/* line 32, src/scss/partials/_generic.scss */
+em em {
+  font-family: notosans-regular, verdana, sans-serif;
+}
+
+/* line 36, src/scss/partials/_generic.scss */
+strong,
+b {
+  font-family: notosans-bold;
+  font-weight: 700;
+}
+
+/* line 42, src/scss/partials/_generic.scss */
+strong em,
+em, strong {
+  font-family: notosans-bolditalic;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* line 49, src/scss/partials/_generic.scss */
+code {
+  background-color: #ededed;
+  font-family: notomono-regular, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+/* Handling blockquotes */
+/* line 55, src/scss/partials/_generic.scss */
+blockquote {
+  font-size: 1.25em;
+  line-height: 1.458333;
+  border-left: 0.5em solid #607d8b;
+  padding-left: 1.5em;
+}
+
+/* Include media queries for your project here*/
+@media screen and (min-width: 37.5em) and (max-width: 50em) and (-webkit-min-device-pixel-ratio: 1) {
+  /* line 3, src/scss/partials/_mq.scss */
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.125;
+  }
+
+  /* line 8, src/scss/partials/_mq.scss */
+  h2 {
+    font-size: 2em;
+    line-height: 1.25;
+  }
+
+  /* line 13, src/scss/partials/_mq.scss */
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+
+  /* line 18, src/scss/partials/_mq.scss */
+  h4 {
+    font-size: 1.125em;
+    line-height: 1.222222;
+  }
+}
+@media screen and (min-width: 20em) and (max-width: 37.5em) and (-webkit-min-device-pixel-ratio: 1) {
+  /* line 26, src/scss/partials/_mq.scss */
+  blockquote {
+    font-size: 1.25em;
+    line-height: 1.25;
+  }
+
+  /* line 31, src/scss/partials/_mq.scss */
+  h1 {
+    font-size: 2em;
+    line-height: 1.25;
+  }
+
+  /* line 36, src/scss/partials/_mq.scss */
+  h2 {
+    font-size: 1.625em;
+    line-height: 1.15384615;
+  }
+
+  /* line 41, src/scss/partials/_mq.scss */
+  h3 {
+    font-size: 1.375em;
+    line-height: 1.13636364;
+  }
+
+  /* line 46, src/scss/partials/_mq.scss */
+  h4 {
+    font-size: 1.125em;
+    line-height: 1.111111;
+  }
+}
+/* line 8, src/scss/partials/_headings.scss */
+h1 {
+  font-size: 3em;
+  line-height: 1.05;
+}
+
+/* line 13, src/scss/partials/_headings.scss */
+h1.inverse {
+  background-color: #000000;
+  color: #ffffff;
+  box-sizing: content-box;
+  padding: 1em 0;
+  font-size: 3em;
+  line-height: 1.05;
+}
+
+/* line 19, src/scss/partials/_headings.scss */
+h2 {
+  font-size: 2.25em;
+  line-height: 1.25;
+}
+
+/* line 24, src/scss/partials/_headings.scss */
+h2.inverse {
+  background-color: #000000;
+  color: #ffffff;
+  box-sizing: content-box;
+  padding: 1em 0;
+  font-size: 2.25em;
+  line-height: 1.25;
+}
+
+@media screen and (min-width: 37.5em) and (max-width: 50em) and (-webkit-min-device-pixel-ratio: 1) {
+  /* line 33, src/scss/partials/_headings.scss */
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.125;
+  }
+
+  /* line 38, src/scss/partials/_headings.scss */
+  h2 {
+    font-size: 2em;
+    line-height: 1.25;
+  }
+}
+@media screen and (min-width: 20em) and (max-width: 37.5em) and (-webkit-min-device-pixel-ratio: 1) {
+  /* line 45, src/scss/partials/_headings.scss */
+  h1 {
+    font-size: 2em;
+    line-height: 1.25;
+  }
+}
+/* Flexbox related classes */
+/* line 2, src/scss/partials/_images.scss */
+figure {
+  counter-increment: figure-count;
+}
+/* line 5, src/scss/partials/_images.scss */
+figure img {
+  width: 100%;
+  max-height: auto;
+}
+/* line 10, src/scss/partials/_images.scss */
+figure figcaption {
+  font-size: .75rem;
+  font-color: #333333;
+}
+/* line 15, src/scss/partials/_images.scss */
+figure figcaption::before {
+  content: "Figure " counter(figure-count) ": ";
+}
+
+/* line 2, src/scss/partials/_tables.scss */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* line 6, src/scss/partials/_tables.scss */
+table tbody {
+  border: 1px solid black;
+}
+
+/* line 9, src/scss/partials/_tables.scss */
+table tbody tr:nth-child(even) {
+  background-color: #9e9e9e;
+}
+
+/* line 12, src/scss/partials/_tables.scss */
+table th {
+  border: 1px solid black;
+  font-family: notosans-bold, verdana, sans-serif;
+  text-align: center;
+}
+
+/* line 17, src/scss/partials/_tables.scss */
+table td {
+  border: 1px solid black;
+}
+
+/* line 1, src/scss/partials/_video.scss */
+video,
+object {
+  clear: both;
+  display: block;
+  margin: 1em auto;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* line 10, src/scss/partials/_video.scss */
+.video {
+  margin: 2em 0;
+}
+
+/* line 13, src/scss/partials/_video.scss */
+.video p {
+  font-style: italic;
+  font-weight: 700;
+  margin-top: -.125em;
+}
+
+/* line 18, src/scss/partials/_video.scss */
+.video iframe {
+  clear: both;
+  display: block;
+  margin: 1em auto;
+  max-width: inherit;
+  text-align: center;
+}
+
+/* line 26, src/scss/partials/_video.scss */
+.youtube-player {
+  border: 1px solid black;
+  position: relative;
+  padding-bottom: 56.23%;
+  /* Use 75% for 4:3 videos */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  margin: 5px;
+}
+
+/* line 37, src/scss/partials/_video.scss */
+.youtube-player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: transparent;
+}
+
+/* line 46, src/scss/partials/_video.scss */
+.youtube-player img {
+  bottom: 0;
+  display: block;
+  left: 0;
+  margin: auto;
+  max-width: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  height: auto;
+  cursor: pointer;
+  transition: .4s all;
+}
+
+/* line 61, src/scss/partials/_video.scss */
+.youtube-player .play {
+  height: 72px;
+  width: 72px;
+  left: 50%;
+  top: 50%;
+  margin-left: -36px;
+  margin-top: -36px;
+  position: absolute;
+  background: url("../images/play.png") no-repeat;
+  cursor: pointer;
+}
+
+/* Informational messages */
+/* line 10, src/scss/partials/_messages.scss */
+.message {
+  border: 1px solid black;
+  border-radius: 10px;
+  display: block;
+  padding: .5em;
+  margin: 1em 0;
+}
+
+/* line 14, src/scss/partials/_messages.scss */
+.info {
+  border: 1px solid black;
+  border-radius: 10px;
+  display: block;
+  padding: .5em;
+  margin: 1em 0;
+  background-color: lightblue;
+}
+
+/* line 19, src/scss/partials/_messages.scss */
+.warning {
+  border: 1px solid black;
+  border-radius: 10px;
+  display: block;
+  padding: .5em;
+  margin: 1em 0;
+  background-color: lightyellow;
+}
+
+/* line 24, src/scss/partials/_messages.scss */
+.danger {
+  border: 1px solid black;
+  border-radius: 10px;
+  display: block;
+  padding: .5em;
+  margin: 1em 0;
+  background-color: indianred;
+}
+
+/* color variable definitions to test */
+/* line 23, src/scss/partials/_colors.scss */
+#palette1,
+#palette2 {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  -webkit-align-content: center;
+          align-content: center;
+  width: 800px;
+}
+
+/* line 32, src/scss/partials/_colors.scss */
+.color-item {
+  -webkit-flex: 1;
+          flex: 1;
+}
+/* line 35, src/scss/partials/_colors.scss */
+.color-item p {
+  font-size: 75%;
+}
+
+/* line 39, src/scss/partials/_colors.scss */
+.p1-swatch1 {
+  border-radius: 50px;
+  text-align: center;
+  vertical-align: text-bottom;
+  height: 100px;
+  width: 100px;
+  background-color: #094074;
+}
+
+/* line 44, src/scss/partials/_colors.scss */
+.p1-swatch2 {
+  border-radius: 50px;
+  text-align: center;
+  vertical-align: text-bottom;
+  height: 100px;
+  width: 100px;
+  background-color: #c5d1eb;
+}
+
+/* line 49, src/scss/partials/_colors.scss */
+.p1-swatch3 {
+  border-radius: 50px;
+  text-align: center;
+  vertical-align: text-bottom;
+  height: 100px;
+  width: 100px;
+  background-color: #92afd7;
+}
+
+/* line 54, src/scss/partials/_colors.scss */
+.p1-swatch4 {
+  border-radius: 50px;
+  text-align: center;
+  vertical-align: text-bottom;
+  height: 100px;
+  width: 100px;
+  background-color: #5a7684;
+}
+
+/* line 59, src/scss/partials/_colors.scss */
+.p1-swatch5 {
+  border-radius: 50px;
+  text-align: center;
+  vertical-align: text-bottom;
+  height: 100px;
+  width: 100px;
+  background-color: #1c2321;
+}
+
+/* line 64, src/scss/partials/_colors.scss */
+.p2-swatch1 {
+  border-radius: 50px;
+  text-align: center;
+  vertical-align: text-bottom;
+  height: 100px;
+  width: 100px;
+  background-color: #fcecc9;
+}
+
+/* line 69, src/scss/partials/_colors.scss */
+.p2-swatch2 {
+  border-radius: 50px;
+  text-align: center;
+  vertical-align: text-bottom;
+  height: 100px;
+  width: 100px;
+  background-color: #fcb0b3;
+}
+
+/* line 74, src/scss/partials/_colors.scss */
+.p2-swatch3 {
+  border-radius: 50px;
+  text-align: center;
+  vertical-align: text-bottom;
+  height: 100px;
+  width: 100px;
+  background-color: #f93943;
+}
+
+/* line 79, src/scss/partials/_colors.scss */
+.p2-swatch4 {
+  border-radius: 50px;
+  text-align: center;
+  vertical-align: text-bottom;
+  height: 100px;
+  width: 100px;
+  background-color: #7eb2dd;
+}
+
+/* line 84, src/scss/partials/_colors.scss */
+.p2-swatch5 {
+  border-radius: 50px;
+  text-align: center;
+  vertical-align: text-bottom;
+  height: 100px;
+  width: 100px;
+  background-color: #445e93;
+}
+
+/* line 1, src/scss/partials/_grid-gallery.scss */
+.gallery {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+}
+
+/* line 7, src/scss/partials/_grid-gallery.scss */
+.gallery > .card {
+  margin: .5vw;
+  border: 1px solid #444;
+  padding: .5vw;
+  -webkit-flex: 1 0 auto;
+          flex: 1 0 auto;
+  width: 300px;
+}
+
+/* line 15, src/scss/partials/_grid-gallery.scss */
+.gallery > .card--large {
+  margin: .5vw;
+  border: 1px solid #444;
+  padding: .5vw;
+  -webkit-flex: 2 0 auto;
+          flex: 2 0 auto;
+  width: 300px;
+}
+
+/* line 2, src/scss/partials/_cards.scss */
+#card-container {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+/* line 8, src/scss/partials/_cards.scss */
+.card {
+  width: 400px;
+  -webkit-flex: 1 0 auto;
+          flex: 1 0 auto;
+  margin: 2rem;
+  overflow: hidden;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  color: #272727;
+  border-radius: 2px;
+}
+
+/* line 19, src/scss/partials/_cards.scss */
+.title {
+  padding: 1.3rem;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  background-color: #8a8a8a;
+  color: #fff;
+}
+
+/* line 28, src/scss/partials/_cards.scss */
+.action-title,
+.notes-title {
+  margin-bottom: 2rem;
+  padding: 1.3rem;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  background-color: #8a8a8a;
+  color: #fff;
+}
+
+/* line 39, src/scss/partials/_cards.scss */
+.action {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+  text-align: center;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+
+/* line 47, src/scss/partials/_cards.scss */
+.action a {
+  -webkit-flex: 1;
+          flex: 1;
+}
+
+/* line 50, src/scss/partials/_cards.scss */
+.card--large {
+  margin: .5vw;
+  border: 1px solid #444;
+  padding: .5vw;
+  -webkit-flex: 2 0 auto;
+          flex: 2 0 auto;
+  width: 600px;
+}
+
+/* Monospaced font for code samples */
+@font-face {
+  font-family: "notomono-regular";
+  src: url("/fonts/notomono-regular-webfont.eot");
+  src: url("/fonts/notomono-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/notomono-regular-webfont.woff2") format("woff2"), url("/fonts/notomono-regular-webfont.woff") format("woff"), url("/fonts/notomono-regular-webfont.ttf") format("truetype"), url("/fonts/notomono-regular-webfont.svg#notomono-regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Regular font */
+@font-face {
+  font-family: "notosans-regular";
+  src: url("/fonts/notosans-regular-webfont.eot");
+  src: url("/fonts/notosans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/notosans-regular-webfont.woff2") format("woff2"), url("/fonts/notosans-regular-webfont.woff") format("woff"), url("/fonts/notosans-regular-webfont.ttf") format("truetype"), url("/fonts/notosans-regular-webfont.svg#notosans-regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Bold font */
+@font-face {
+  font-family: "notosans-bold";
+  src: url("/fonts/notosans-bold-webfont.eot");
+  src: url("/fonts/notosans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/notosans-bold-webfont.woff2") format("woff2"), url("/fonts/notosans-bold-webfont.woff") format("woff"), url("/fonts/notosans-bold-webfont.ttf") format("truetype"), url("/fonts/notosans-bold-webfont.svg#notosans-bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+/* Italic Font */
+@font-face {
+  font-family: "notosans-italics";
+  src: url("/fonts/notosans-italic-webfont.eot");
+  src: url("/fonts/notosans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/notosans-italic-webfont.woff2") format("woff2"), url("/fonts/notosans-italic-webfont.woff") format("woff"), url("/fonts/notosans-italic-webfont.ttf") format("truetype"), url("/fonts/notosans-italic-webfont.svg#notosans-italics") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+/* bold-italic font */
+@font-face {
+  font-family: "notosans-bolditalic";
+  src: url("/fonts/notosans-bolditalic-webfont.eot");
+  src: url("/fonts/notosans-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/notosans-bolditalic-webfont.woff2") format("woff2"), url("/fonts/notosans-bolditalic-webfont.woff") format("woff"), url("/fonts/notosans-bolditalic-webfont.ttf") format("truetype"), url("/fonts/notosans-bolditalic-webfont.svg#notosans-bolditalic") format("svg");
+  font-weight: 700;
+  font-style: italic;
+}
+/* line 53, src/scss/main.scss */
+.container {
+  width: 48em;
+}
+
+/* line 58, src/scss/main.scss */
+.flexbox-row-forward {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+/* line 62, src/scss/main.scss */
+.flexbox-row-back {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row-reverse wrap;
+          flex-flow: row-reverse wrap;
+}
+
+/* line 66, src/scss/main.scss */
+.flexbox-col-forward {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+/* line 70, src/scss/main.scss */
+.flexbox-col-back {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column-reverse wrap;
+          flex-flow: column-reverse wrap;
+}
+
+/* line 74, src/scss/main.scss */
+.flex-item {
+  -webkit-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+/* Column predefined classes */
+/* line 80, src/scss/main.scss */
+.columns-2 {
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 2em;
+     -moz-column-gap: 2em;
+          column-gap: 2em;
+  -webkit-column-fill: balance;
+     -moz-column-fill: balance;
+          column-fill: balance;
+  -webkit-column-span: none;
+     -moz-column-span: none;
+          column-span: none;
+}
+
+/* line 84, src/scss/main.scss */
+.columns-3 {
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 1em;
+     -moz-column-gap: 1em;
+          column-gap: 1em;
+  -webkit-column-fill: balance;
+     -moz-column-fill: balance;
+          column-fill: balance;
+  -webkit-column-span: none;
+     -moz-column-span: none;
+          column-span: none;
+}
+
+/* line 88, src/scss/main.scss */
+.columns-20em-fixed {
+  -webkit-column-width: 20em;
+     -moz-column-width: 20em;
+          column-width: 20em;
+  -webkit-column-gap: 1em;
+     -moz-column-gap: 1em;
+          column-gap: 1em;
+  -webkit-column-fill: balance;
+     -moz-column-fill: balance;
+          column-fill: balance;
+  -webkit-column-span: none;
+     -moz-column-span: none;
+          column-span: none;
+}
+
+/* line 92, src/scss/main.scss */
+.columns-10em-fixed {
+  -webkit-column-width: 10em;
+     -moz-column-width: 10em;
+          column-width: 10em;
+  -webkit-column-gap: 1em;
+     -moz-column-gap: 1em;
+          column-gap: 1em;
+  -webkit-column-fill: balance;
+     -moz-column-fill: balance;
+          column-fill: balance;
+  -webkit-column-span: none;
+     -moz-column-span: none;
+          column-span: none;
+}
+
+/* line 1, src/scss/partials/_essays.scss */
+.grid-wrapper {
+  /* autoprefixer: off*/
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr repeat(14, 10px 1fr);
+  grid-template-rows: 1fr;
+}
+
+/* default essay grid positioning */
+/* line 6, src/scss/partials/_essays.scss */
+.essay #header {
+  /* autoprefixer: off*/
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+
+/* line 12, src/scss/partials/_essays.scss */
+.essay #content {
+  /* autoprefixer: off*/
+  grid-column: 4 / 12;
+  grid-row: 3 / 4;
+}
+
+/* Essay with title on the left side*/
+/* line 19, src/scss/partials/_essays.scss */
+.essay-side-title-left section#header {
+  /* autoprefixer: off*/
+  height: 40vh;
+  grid-column: 1 / 7;
+  grid-row: 1 / 3;
+}
+
+/* line 25, src/scss/partials/_essays.scss */
+.essay--side-title-left #content {
+  /* autoprefixer: off*/
+  grid-column: 8/13;
+}
+
+/* Essay with title on the right*/
+/* line 31, src/scss/partials/_essays.scss */
+.grid-wrapper.essay--side-title-right #content {
+  /* autoprefixer: off*/
+  grid-column: 3/13;
+}
+
+/* line 36, src/scss/partials/_essays.scss */
+.grid-wrapper.essay-side-title-right section#header {
+  /* autoprefixer: off*/
+  height: 40rem;
+  grid-column: 25/-1;
+  grid-row: 1/2;
+}
+
+/* line 43, src/scss/partials/_essays.scss */
+.up2-wrapper {
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 46, src/scss/partials/_essays.scss */
+.up2-wrapper .text {
+  padding: 100px 60px 60px;
+  margin-left: 50%;
+  z-index: 10;
+}
+/* line 52, src/scss/partials/_essays.scss */
+.up2-wrapper h1 {
+  font-size: 7vw;
+  text-align: right;
+  font-family: "Sansita One", cursive;
+  line-height: 1;
+}
+/* line 59, src/scss/partials/_essays.scss */
+.up2-wrapper .lead {
+  font-size: 1.5vw;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.7);
+}
+/* line 65, src/scss/partials/_essays.scss */
+.up2-wrapper article {
+  -webkit-columns: 2;
+     -moz-columns: 2;
+          columns: 2;
+  -webkit-column-width: 250px;
+     -moz-column-width: 250px;
+          column-width: 250px;
+  -webkit-column-gap: 2em;
+     -moz-column-gap: 2em;
+          column-gap: 2em;
+}
+/* line 71, src/scss/partials/_essays.scss */
+.up2-wrapper p {
+  line-height: 1.3;
+}
+/* line 75, src/scss/partials/_essays.scss */
+.up2-wrapper .pull-quote {
+  font-size: 1.8em;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 20px 0;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+/* line 83, src/scss/partials/_essays.scss */
+.up2-wrapper footer {
+  height: 2vh;
+}
+/* line 87, src/scss/partials/_essays.scss */
+.up2-wrapper .image {
+  position: fixed;
+  background-image: url("https://unsplash.it/2500?image=904");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 50vw;
+  -webkit-flex: 0 0 50%;
+          flex: 0 0 50%;
+  z-index: 1;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+}
+/* line 100, src/scss/partials/_essays.scss */
+.up2-wrapper .image .caption {
+  color: #efefef;
+  font-weight: normal;
+  font-size: 1.2em;
+  text-align: right;
+  margin: 0 20px 20px 50%;
+}
+
+/* Include media queries for your project here*/
+/* Include media queries for your project here*/
+@media screen and (min-width: 37.5em) and (max-width: 50em) and (-webkit-min-device-pixel-ratio: 1) {
+  /* line 3, src/scss/partials/_mq.scss */
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.125;
+  }
+
+  /* line 8, src/scss/partials/_mq.scss */
+  h2 {
+    font-size: 2em;
+    line-height: 1.25;
+  }
+
+  /* line 13, src/scss/partials/_mq.scss */
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+
+  /* line 18, src/scss/partials/_mq.scss */
+  h4 {
+    font-size: 1.125em;
+    line-height: 1.222222;
+  }
+}
+@media screen and (min-width: 20em) and (max-width: 37.5em) and (-webkit-min-device-pixel-ratio: 1) {
+  /* line 26, src/scss/partials/_mq.scss */
+  blockquote {
+    font-size: 1.25em;
+    line-height: 1.25;
+  }
+
+  /* line 31, src/scss/partials/_mq.scss */
+  h1 {
+    font-size: 2em;
+    line-height: 1.25;
+  }
+
+  /* line 36, src/scss/partials/_mq.scss */
+  h2 {
+    font-size: 1.625em;
+    line-height: 1.15384615;
+  }
+
+  /* line 41, src/scss/partials/_mq.scss */
+  h3 {
+    font-size: 1.375em;
+    line-height: 1.13636364;
+  }
+
+  /* line 46, src/scss/partials/_mq.scss */
+  h4 {
+    font-size: 1.125em;
+    line-height: 1.111111;
+  }
+}
+
+
+
+/*# sourceMappingURL=main.css.map */

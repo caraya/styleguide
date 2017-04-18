@@ -178,11 +178,7 @@
     <code class="Code Code--lang-json">
         
             
-            <pre>{
-  <span class="hljs-attr">"body-content"</span>: <span class="hljs-string">"This is sample content for the card. more sample conent but can't do HTML from YAML"</span>,
-  <span class="hljs-attr">"footer-content"</span>: <span class="hljs-string">"Optional content for the footer"</span>,
-  <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Sample Project"</span>
-}</pre>
+            <pre><span class="hljs-comment">/* No context defined for this component. */</span></pre>
             
         
     </code>
@@ -213,23 +209,96 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-CSS FileBrowser-code">
-                                <pre><span class="hljs-selector-class">.card</span> {
-    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid rebeccapurple;
+                                <pre>
+<span class="hljs-selector-class">.card</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">400px</span>;
+    <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span> <span class="hljs-number">0</span> auto;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">2rem</span>;
+    <span class="hljs-attribute">overflow</span>: hidden;
+    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">2px</span> <span class="hljs-number">5px</span> <span class="hljs-number">0</span> <span class="hljs-built_in">rgba</span>(0, 0, 0, 0.16), <span class="hljs-number">0</span> <span class="hljs-number">2px</span> <span class="hljs-number">10px</span> <span class="hljs-number">0</span> <span class="hljs-built_in">rgba</span>(0, 0, 0, 0.12);
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#272727</span>;
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">2px</span>;
 }
 
-<span class="hljs-selector-class">.card-header</span> {
-    <span class="hljs-attribute">background-color</span>: lightgrey;
-    <span class="hljs-attribute">color</span>: white;
-    <span class="hljs-attribute">padding</span>: .<span class="hljs-number">125em</span>;
+
+<span class="hljs-selector-class">.card--large</span> {
+    <span class="hljs-attribute">margin</span>: .<span class="hljs-number">5vw</span>;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#444</span>;
+    <span class="hljs-attribute">padding</span>: .<span class="hljs-number">5vw</span>;
+    <span class="hljs-attribute">flex</span>: <span class="hljs-number">2</span> <span class="hljs-number">0</span> auto;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">600px</span>;
 }
 
-<span class="hljs-selector-class">.card-body</span> {
-    <span class="hljs-attribute">padding</span>: .<span class="hljs-number">5em</span>;
+
+
+<span class="hljs-selector-class">.card</span> <span class="hljs-selector-class">.title</span> {
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">1.3rem</span>;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">3rem</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.5rem</span>;
+    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">300</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#8a8a8a</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
 }
 
-<span class="hljs-selector-class">.card-footer</span> {
-    <span class="hljs-attribute">padding</span>: .<span class="hljs-number">5em</span>;
+<span class="hljs-selector-class">.card</span> <span class="hljs-selector-class">.action-title</span> {
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">2rem</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">1.3rem</span>;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">3rem</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.5rem</span>;
+    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">300</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#8a8a8a</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
 }
+
+<span class="hljs-selector-class">.card</span> <span class="hljs-selector-class">.content</span> {
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">1.3rem</span>;
+    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">300</span>;
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">2px</span> <span class="hljs-number">2px</span>;
+}
+
+<span class="hljs-selector-class">.card</span> <span class="hljs-selector-class">.metadata</span> {
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">flex-flow</span>: row wrap;
+    <span class="hljs-attribute">justify-content</span>: space-around;
+    <span class="hljs-attribute">align-items</span>: center;
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">2rem</span>;
+}
+
+<span class="hljs-selector-class">.card</span> <span class="hljs-selector-class">.metadata</span> <span class="hljs-selector-tag">p</span> {
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+}
+
+
+<span class="hljs-selector-class">.card</span> <span class="hljs-selector-class">.action</span> {
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">flex-flow</span>: row wrap;
+    <span class="hljs-attribute">justify-content</span>: space-around;
+    <span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> solid <span class="hljs-built_in">rgba</span>(160, 160, 160, 0.2);
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">1.3rem</span>; }
+
+
+<span class="hljs-selector-class">.action</span> <span class="hljs-selector-tag">a</span> {
+    <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span>;
+}
+<span class="hljs-selector-class">.card</span> <span class="hljs-selector-tag">a</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffab40</span>;
+    <span class="hljs-attribute">transition</span>: color <span class="hljs-number">0.3s</span> ease;
+    <span class="hljs-attribute">text-decoration</span>: none;
+}
+
+<span class="hljs-selector-class">.card</span> <span class="hljs-selector-class">.image</span> {
+    <span class="hljs-attribute">position</span>: relative;
+}
+
+<span class="hljs-selector-class">.card</span> <span class="hljs-selector-class">.image</span> <span class="hljs-selector-class">.title</span> {
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">1.3rem</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>; }
+
+<span class="hljs-selector-class">.card</span> <span class="hljs-selector-class">.image</span> <span class="hljs-selector-tag">img</span> {
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">2px</span> <span class="hljs-number">2px</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>; }
 </pre>
                             </code>
                             
@@ -246,7 +315,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">209 Bytes</span>
+                    <span class="Meta-value">1.5 KB</span>
                 </li>
             </ul>
         </div>
@@ -624,6 +693,30 @@
         
     
         
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="form.html" data-pjax>
+                <span>Form</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
         <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-headings">
             <h4 class="Tree-collectionLabel" data-role="toggle">
                 <span>Headings</span>
@@ -914,6 +1007,30 @@
         </li>
         
     
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="up2.html" data-pjax>
+                <span>Up 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
 
             </ul>
         </li>
@@ -1040,19 +1157,6 @@
 
 
     
-<div class="Navigation-group">
-
-<div class="Tree" data-behaviour="tree" id="tree-docs">
-    <h3 class="Tree-title">documentation</h3>
-    <ul class="Tree-items Tree-depth-1">
-        
-    
-
-    </ul>
-</div>
-
-</div>
-
 
 
     

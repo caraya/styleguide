@@ -1,17 +1,27 @@
 /* Informational messages */
-.message {
+@mixin messageContent {
   border: 1px solid black;
   border-radius: 10px;
   display: block;
   padding: .5em;
   margin: 1em 0;
 }
-.message.info {
-  background-color: lightblue;
+
+.message {
+  @include messageContent();
 }
-.message.warning {
-  background-color: lightyellow;
-}
-.message.danger {
-  background-color: indianred;
-}
+
+  .info {
+    @include messageContent();
+    background-color: lightblue;
+  }
+
+  .warning {
+    @include messageContent();
+    background-color: lightyellow;
+  }
+
+  .danger {
+    @include messageContent();
+    background-color: indianred;
+  }

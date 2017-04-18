@@ -1,5 +1,4 @@
 context:
-  collated: true
   title: "Level 1 Heading"
   variants:
     name: inverse

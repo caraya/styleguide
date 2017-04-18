@@ -1,0 +1,21 @@
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.gallery > .card {
+  margin: .5vw;
+  border: 1px solid #444;
+  padding: .5vw;
+  flex: 1 0 auto;
+  width: 300px;
+}
+
+.gallery > .card--large {
+  margin: .5vw;
+  border: 1px solid #444;
+  padding: .5vw;
+  flex: 2 0 auto;
+  width: 300px;
+}

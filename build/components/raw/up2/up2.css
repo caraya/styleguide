@@ -1,0 +1,73 @@
+body {
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+}
+
+.article-wrapper {
+    display: flex;
+}
+
+.image {
+    position: fixed;
+    background-image: url("https://unsplash.it/2500?image=904");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 50vw;
+    flex: 0 0 50%;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.image .caption {
+    color: white;
+    font-weight: normal;
+    font-size: 1.2em;
+    text-align: right;
+    margin: 0 20px 20px 50%;
+}
+
+.text {
+    padding: 100px 60px 60px;
+    margin-left: 50%;
+    z-index: 10;
+}
+
+h1 {
+    font-size: 7vw;
+    text-align: right;
+    font-family: "Sansita One", cursive;
+    line-height: 1;
+}
+
+.lead {
+    font-size: 1.5vw;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+article {
+    columns: 2;
+    column-width: 250px;
+    column-gap: 2em;
+}
+
+p {
+    line-height: 1.3;
+}
+
+footer {
+    height: 2vh;
+}
+
+.pull-quote {
+    font-size: 1.8em;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 20px 0;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}

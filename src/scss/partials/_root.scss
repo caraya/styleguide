@@ -1,22 +1,3 @@
-/* color variable definitions to test */
-:root {
-  --palette-1-color1: rgba(9, 64, 116, 1);
-  --palette-1-color2: rgba(197, 209, 235, 1);
-  --palette-1-color3: rgba(146, 175, 215, 1);
-  --palette-1-color4: rgba(90, 118, 132, 1);
-  --palette-1-color5: rgba(28, 35, 33, 1);
-
-  --palette-2-color1: rgba(252, 236, 201, 1);
-  --palette-2-color2: rgba(252, 176, 179, 1);
-  --palette-2-color3: rgba(249, 57, 67, 1);
-  --palette-2-color4: rgba(126, 178, 221, 1);
-  --palette-2-color5: rgba(68, 94, 147, 1);
-
-}
-
-// We may eventually want to move the variables below into a generic palette
-// to include in the root element defined above
-
 //Greens
 $turqoise: #1abc9c;
 $green-sea: #16a085;

@@ -57,7 +57,7 @@ const AUTOPREFIXER_BROWSERS = [
 
 // SCSS conversion and CSS processing
 /**
- * @name sass:dev
+ * @name sass
  * @description SASS conversion task to produce development css with expanded syntax.
  *
  * We run this task agains Ruby SASS, not lib SASS. As such it requires the SASS Gem to be installed
@@ -65,10 +65,12 @@ const AUTOPREFIXER_BROWSERS = [
  * @see {@link http://sass-lang.com|SASS}
  * @see {@link http://sass-compatibility.github.io/|SASS Feature Compatibility}
  */
-gulp.task('sass:dev', () =>{
+gulp.task('sass', () =>{
   return sass('src/scss/**/*.scss', {
     sourcemap: true,
-    style: 'expanded'
+    style: 'expanded',
+    lineNumbers: true,
+    lineComments: true
   })
   .pipe(gulp.dest('src/css'))
   .pipe($.size({
@@ -85,8 +87,14 @@ gulp.task('sass:dev', () =>{
  *
  * @see {@link https://github.com/brigade/scss-lint|scss-lint}
  */
-gulp.task('scss-lint', ['sass:dev'], () =>{
-  return gulp.src(['src/scss/**/*.scss'])
+gulp.task('scss-lint', ['sass'], () =>{
+  return gulp.src([
+    'src/scss/**/*.scss',
+    '!src/scss/normalize/**/.*',
+    '!src/scss/modular-scale/**/*',
+    '!src/scss/partials/_prism.scss',
+    '!src/scss/utility-opentype.scss'
+  ], {base:"."})
   .pipe(scsslint({
     'reporterOutputFormat': 'Checkstyle'
   }));
@@ -127,6 +135,7 @@ gulp.task('processCSS', ['sassdoc'], () =>{
   .pipe($.postcss([
     autoprefixer({ browsers: AUTOPREFIXER_BROWSERS })
   ]))
+  // .pipe($.cssnano())
   .pipe($.sourcemaps.write('.'))
   .pipe(gulp.dest('src/css'))
   .pipe($.size({
@@ -383,17 +392,29 @@ gulp.task('clean', () =>{
   ]);
 });
 
+// Copy Resrouces
+gulp.task('copyResources', () => {
+  gulp.src([
+    'src/css/',
+    'src/images/',
+    'src/scripts/',
+    'src/fonts/'
+  ])
+  .pipe(gulp.dest('public'))
+});
+
 // AXE CORE A11Y Tests
-gulp.task('axe', (done) => {
+gulp.task('axe', done => {
   var options = {
     saveOutputIn: './a11yReport.json',
     browser: 'phantomjs',
-    urls: ['components/**/*.html']
+    urls: ['build/**/*.html']
   };
   return axe(options, done);
 });
 
-gulp.task('snyk-auth', function(done){
+// Node security to update modules
+gulp.task('snyk-auth', done =>{
   return snyk({
     command: 'auth',
     options: {
@@ -404,7 +425,7 @@ gulp.task('snyk-auth', function(done){
   }, done)
 });
 
-gulp.task('protect', function(done) {
+gulp.task('protect', ['snyk-auth'], done => {
   return snyk({
     command: 'protect',
     options: {
@@ -416,7 +437,7 @@ gulp.task('protect', function(done) {
   
 });
 
-gulp.task('test', function (done) {
+gulp.task('test', ['snyk-auth'], done => {
   return snyk({
     command: 'test',
     
