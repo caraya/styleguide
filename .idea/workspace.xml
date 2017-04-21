@@ -2,30 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ac4509c-136e-40cf-b0cc-22b3133fcd7c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/_alternative-layout.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/layouts/alternative/alternative.config.yaml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/layouts/alternative/alternative.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/lists/lists.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/scripts/vendor/moment-with-locales.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/scripts/load-fonts-alt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/scss/alternative.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/scss/partials/_alternative-fonts.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/scss/partials/_animation.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/scss/partials/_links.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/scss/partials/_lists.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/main.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/utility-opentype.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/utility-opentype.css.map" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/main.css" afterPath="$PROJECT_DIR$/public/styles/main.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/main.css.map" afterPath="$PROJECT_DIR$/public/styles/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/22f2c66110756e22613ca049d0908eacfcb623d8/main.scssc" afterPath="$PROJECT_DIR$/.sass-cache/22f2c66110756e22613ca049d0908eacfcb623d8/main.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/8a2f1bac98bbd0258137a3ed54df0b3069258625/_grids.scssc" afterPath="$PROJECT_DIR$/.sass-cache/8a2f1bac98bbd0258137a3ed54df0b3069258625/_grids.scssc" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/05dd42024c3c0ca3bec99dc7511967c9a1a648e2/_import-now.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/22f2c66110756e22613ca049d0908eacfcb623d8/alternative.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/22f2c66110756e22613ca049d0908eacfcb623d8/main.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/22f2c66110756e22613ca049d0908eacfcb623d8/utility-opentype.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/2ba6cb4ee07ec177526cc6aca8862913a56a3f8e/_modular-scale.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/3f680ac0fe0f0ced118979209534d2248dd7418f/_calc.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/3f680ac0fe0f0ced118979209534d2248dd7418f/_function-list.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/3f680ac0fe0f0ced118979209534d2248dd7418f/_function.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/3f680ac0fe0f0ced118979209534d2248dd7418f/_generate-list.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/3f680ac0fe0f0ced118979209534d2248dd7418f/_pow.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/3f680ac0fe0f0ced118979209534d2248dd7418f/_ratios.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/3f680ac0fe0f0ced118979209534d2248dd7418f/_respond.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/3f680ac0fe0f0ced118979209534d2248dd7418f/_round-px.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/3f680ac0fe0f0ced118979209534d2248dd7418f/_sort-list.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/3f680ac0fe0f0ced118979209534d2248dd7418f/_tests.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/8a2f1bac98bbd0258137a3ed54df0b3069258625/_alternative-fonts.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/8a2f1bac98bbd0258137a3ed54df0b3069258625/_animation.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/8a2f1bac98bbd0258137a3ed54df0b3069258625/_cards.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/8a2f1bac98bbd0258137a3ed54df0b3069258625/_colors.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/8a2f1bac98bbd0258137a3ed54df0b3069258625/_columns.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/8a2f1bac98bbd0258137a3ed54df0b3069258625/_essays.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/8a2f1bac98bbd0258137a3ed54df0b3069258625/_flexbox.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/8a2f1bac98bbd0258137a3ed54df0b3069258625/_fonts.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/8a2f1bac98bbd0258137a3ed54df0b3069258625/_generic.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/8a2f1bac98bbd0258137a3ed54df0b3069258625/_grid-gallery.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/8a2f1bac98bbd0258137a3ed54df0b3069258625/_grids.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/8a2f1bac98bbd0258137a3ed54df0b3069258625/_headings.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/8a2f1bac98bbd0258137a3ed54df0b3069258625/_images.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/8a2f1bac98bbd0258137a3ed54df0b3069258625/_links.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/8a2f1bac98bbd0258137a3ed54df0b3069258625/_lists.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/8a2f1bac98bbd0258137a3ed54df0b3069258625/_messages.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/8a2f1bac98bbd0258137a3ed54df0b3069258625/_mixins.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/8a2f1bac98bbd0258137a3ed54df0b3069258625/_mq.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/8a2f1bac98bbd0258137a3ed54df0b3069258625/_root.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/8a2f1bac98bbd0258137a3ed54df0b3069258625/_tables.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/8a2f1bac98bbd0258137a3ed54df0b3069258625/_video.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/f2841106802ff815251bc4649fa7ed6770a68fa7/_import-now.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/f2841106802ff815251bc4649fa7ed6770a68fa7/_media.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/f2841106802ff815251bc4649fa7ed6770a68fa7/_normalize-mixin.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/f2841106802ff815251bc4649fa7ed6770a68fa7/_variables.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/f2841106802ff815251bc4649fa7ed6770a68fa7/_vertical-rhythm.scssc" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/_full.hbs" afterPath="$PROJECT_DIR$/components/_full.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/main.scss" afterPath="$PROJECT_DIR$/src/scss/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/partials/_grids.scss" afterPath="$PROJECT_DIR$/src/scss/partials/_grids.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -60,11 +79,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_lists.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_lists.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scss/partials/_lists.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -164,7 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/scss/partials/_variables.scss" />
         <option value="$PROJECT_DIR$/src/scss/partials/_fonts.scss" />
         <option value="$PROJECT_DIR$/upgrades.json" />
         <option value="$PROJECT_DIR$/src/scss/normalize/_import-now.scss" />
@@ -215,6 +243,7 @@
         <option value="$PROJECT_DIR$/src/css/main.css" />
         <option value="$PROJECT_DIR$/components/lists/lists.hbs" />
         <option value="$PROJECT_DIR$/src/scss/partials/_lists.scss" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -342,52 +371,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styleguide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styleguide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styleguide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styleguide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lists" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styleguide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styleguide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aXeReports" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -406,6 +389,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/components/layouts/essay/essay--side-title-left.hbs" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
+    <property name="add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -560,12 +544,12 @@
       <workItem from="1492470869810" duration="2669000" />
       <workItem from="1492474561645" duration="7537000" />
       <workItem from="1492483158267" duration="7049000" />
-      <workItem from="1492709985954" duration="10584000" />
+      <workItem from="1492709985954" duration="10649000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116271000" />
+    <option name="totallyTimeSpent" value="116336000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="23" width="1397" height="877" extended-state="0" />
@@ -619,13 +603,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fractal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/styles/main.css.map">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1036">
@@ -980,6 +957,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
           <folding />
         </state>
       </provider>
