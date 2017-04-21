@@ -1,0 +1,87 @@
+@mixin inverse {
+  background-color: #000000;
+  color: #ffffff;
+  box-sizing: content-box;
+  padding: 1em 0;
+}
+
+
+/* Default body style */
+body {
+  font-family: wf-tisawebpro-n4-active, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.65;
+  //line-height: 1.375;
+}
+
+.container {
+  width: 48em;
+}
+
+em,
+i {
+  font-family: ff-tisa-web-pro, sans-serif;
+  font-style: italic;
+}
+
+em em {
+  font-family:ff-tisa-web-pro, sans-serif;
+}
+
+strong,
+b {
+  font-family: ff-tisa-web-pro, sans-serif;
+  font-weight: 700;
+}
+
+strong em,
+em, strong {
+  font-family: ff-tisa-web-pro, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+code {
+  background-color: #ededed;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+/* Handling blockquotes */
+blockquote {
+  font-size: 1.25em;
+  line-height: 1.458333;
+  border-left: 0.5em solid #607d8b;
+  padding-left: 1.5em;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "canada-type-gibson",sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .0625em;
+}
+
+
+
+h1 {
+  font-size: 3em;
+  line-height: 1.05;
+}
+
+h1.inverse {
+  @include inverse();
+  font-size: 3em;
+  line-height: 1.05;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 1.25;
+}
+
+h2.inverse {
+  @include inverse();
+  font-size: 2.25em;
+  line-height: 1.25;
+}

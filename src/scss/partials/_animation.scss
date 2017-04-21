@@ -1,0 +1,99 @@
+//----   timing  ----//
+$class-slug: t !default;
+@for $i from 1 through 7 {
+  .#{$class-slug}-#{$i} {
+    animation-duration: 0.8 - (0.1s * $i);
+  }
+}
+
+//----   ease  ----//
+$easein-quad: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+$easeout-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$easein-back: cubic-bezier(.57, .07, .6, 1.71);
+$easeout-back: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+.entrance {
+  animation-timing-function: $easeout-quad;
+}
+
+.entrance-emphasis {
+  animation-timing-function: $easeout-back;
+}
+
+.exit {
+  animation-timing-function: $easein-quad;
+}
+
+.exit-emphasis {
+  animation-timing-function: $easein-back;
+}
+
+//----   fill mode extend ---//
+// we probably want this so we'll create a class that can be @extended as a default into our animations
+.anim-fill-both {
+  animation-fill-mode: both;
+}
+
+//animations
+@keyframes pop {
+  0% {
+    transform: scale(0.9) translateZ(0);
+  }
+  100% {
+    transform: scale(1) translateZ(0);
+  }
+}
+
+.pop {
+  animation-name: pop;
+  @extend .anim-fill-both;
+}
+
+@keyframes unpop {
+  0% {
+    transform: scale(1) translateZ(0);
+  }
+  100% {
+    transform: scale(0.9) translateZ(0);
+  }
+}
+
+.unpop {
+  animation-name: unpop;
+  @extend .anim-fill-both;
+}
+
+//----   colors  ----//
+$ltBk: #F4FEFF;
+$dkBk: #EAFBFF;
+$ltBranding: #98C1D9;
+$dkBranding: #293241;
+
+section {
+  background: $dkBk;
+  color: $dkBranding;  width: 800px;
+  display: flex;
+  margin: 60px auto;
+  justify-content: space-around;
+}
+
+.demo {
+  background: $ltBk;
+  width: 150px;
+  height: 150px;
+  border-radius: 1000px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid rgba($ltBranding, .6);
+  box-shadow: 1px 2px 3px 1px rgba($ltBranding, .4);
+  cursor: pointer;
+  transform: scale(0.9) translateZ(0);
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  p {
+    line-height: 1.5em;
+    font-size: 14px;
+  }
+}

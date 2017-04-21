@@ -1,6 +1,6 @@
-@charset "utf-8";
+@charset "UTF-8";
 // Remove the import below if you don't want normalize on your stylesheet
-// @import 'normalize/import-now';
+//@import 'normalize/import-now';
 // Modular scale import
 @import 'modular-scale/modular-scale';
 // Coloe variables
@@ -8,9 +8,7 @@
 // Mixins
 @import 'partials/mixins';
 // Import generic styles
-@import 'partials/generic';
-// Import links mixins
-@import 'partials/links';
+@import 'partials/alternative-fonts';
 // Font declarations
 @import 'partials/fonts';
 // Media queries

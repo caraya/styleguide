@@ -1,10 +1,10 @@
 // Grids mixins and demos
 
 
-@mixin generate-grid($columns: 14, $gap: 10px) { /* autoprefixer: off*/
+@mixin generate-grid($columns: 15, $gap: 10px) { /* autoprefixer: off*/
   display: grid;
   grid-gap: #{$gap};
-  grid-template-columns: 1fr repeat(#{$columns}, 10px 1fr);
+  grid-template-columns: 1fr repeat(($columns - 1), 10px 1fr);
   grid-template-rows: 1fr;
 }
 

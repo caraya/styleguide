@@ -1,72 +1,96 @@
 /* Default body style */
-/* line 2, src/scss/partials/_generic.scss */
+/* line 10, src/scss/partials/_alternative-fonts.scss */
 body {
-  font-family: Verdana, sans-serif;
+  font-family: wf-tisawebpro-n4-active, sans-serif;
   font-size: 16px;
-  line-height: 1.375;
+  font-weight: 300;
+  line-height: 1.65;
 }
 
-/* This will match if the fonts failed to load. It is identical to the default but doesn't have to be*/
-/* line 9, src/scss/partials/_generic.scss */
-.fonts-failed body {
-  font-family: Verdana, sans-serif;
-  font-size: 16px;
-  line-height: 1.375;
-}
-
-/* This will match when fonts load successfully */
-/* line 16, src/scss/partials/_generic.scss */
-.fonts-loaded body {
-  font-family: notosans-regular, verdana, sans-serif;
-  font-size: 16px;
-  line-height: 1.375;
-}
-
-/* line 22, src/scss/partials/_generic.scss */
+/* line 18, src/scss/partials/_alternative-fonts.scss */
 .container {
   width: 48em;
 }
 
-/* line 26, src/scss/partials/_generic.scss */
+/* line 22, src/scss/partials/_alternative-fonts.scss */
 em,
 i {
-  font-family: notosans-italic;
+  font-family: ff-tisa-web-pro, sans-serif;
   font-style: italic;
 }
 
-/* line 32, src/scss/partials/_generic.scss */
+/* line 28, src/scss/partials/_alternative-fonts.scss */
 em em {
-  font-family: notosans-regular, verdana, sans-serif;
+  font-family: ff-tisa-web-pro, sans-serif;
 }
 
-/* line 36, src/scss/partials/_generic.scss */
+/* line 32, src/scss/partials/_alternative-fonts.scss */
 strong,
 b {
-  font-family: notosans-bold;
+  font-family: ff-tisa-web-pro, sans-serif;
   font-weight: 700;
 }
 
-/* line 42, src/scss/partials/_generic.scss */
+/* line 38, src/scss/partials/_alternative-fonts.scss */
 strong em,
 em, strong {
-  font-family: notosans-bolditalic;
+  font-family: ff-tisa-web-pro, sans-serif;
   font-weight: 700;
   font-style: italic;
 }
 
-/* line 49, src/scss/partials/_generic.scss */
+/* line 45, src/scss/partials/_alternative-fonts.scss */
 code {
   background-color: #ededed;
-  font-family: notomono-regular, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 }
 
 /* Handling blockquotes */
-/* line 55, src/scss/partials/_generic.scss */
+/* line 51, src/scss/partials/_alternative-fonts.scss */
 blockquote {
   font-size: 1.25em;
   line-height: 1.458333;
   border-left: 0.5em solid #607d8b;
   padding-left: 1.5em;
+}
+
+/* line 59, src/scss/partials/_alternative-fonts.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "canada-type-gibson",sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .0625em;
+}
+
+/* line 67, src/scss/partials/_alternative-fonts.scss */
+h1 {
+  font-size: 3em;
+  line-height: 1.05;
+}
+
+/* line 72, src/scss/partials/_alternative-fonts.scss */
+h1.inverse {
+  background-color: #000000;
+  color: #ffffff;
+  box-sizing: content-box;
+  padding: 1em 0;
+  font-size: 3em;
+  line-height: 1.05;
+}
+
+/* line 78, src/scss/partials/_alternative-fonts.scss */
+h2 {
+  font-size: 2.25em;
+  line-height: 1.25;
+}
+
+/* line 83, src/scss/partials/_alternative-fonts.scss */
+h2.inverse {
+  background-color: #000000;
+  color: #ffffff;
+  box-sizing: content-box;
+  padding: 1em 0;
+  font-size: 2.25em;
+  line-height: 1.25;
 }
 
 /* Include media queries for your project here*/
@@ -578,6 +602,188 @@ object {
   width: 600px;
 }
 
+/* line 2, src/scss/partials/_lists.scss */
+ul.custom li:before {
+  content: '\2192';
+  margin-left: -2.5rem;
+  position: absolute;
+}
+
+/* line 8, src/scss/partials/_lists.scss */
+ul.custom li,
+ul.custom ul li {
+  list-style-type: none;
+}
+
+/* line 13, src/scss/partials/_lists.scss */
+ul.custom ul li:before {
+  content: '\2192';
+  margin-left: -1.5rem;
+  position: absolute;
+}
+
+/* line 4, src/scss/partials/_animation.scss */
+.t-1 {
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+}
+
+/* line 4, src/scss/partials/_animation.scss */
+.t-2 {
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+/* line 4, src/scss/partials/_animation.scss */
+.t-3 {
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+/* line 4, src/scss/partials/_animation.scss */
+.t-4 {
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+}
+
+/* line 4, src/scss/partials/_animation.scss */
+.t-5 {
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+
+/* line 4, src/scss/partials/_animation.scss */
+.t-6 {
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+}
+
+/* line 4, src/scss/partials/_animation.scss */
+.t-7 {
+  -webkit-animation-duration: 0.1s;
+          animation-duration: 0.1s;
+}
+
+/* line 14, src/scss/partials/_animation.scss */
+.entrance {
+  -webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* line 18, src/scss/partials/_animation.scss */
+.entrance-emphasis {
+  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* line 22, src/scss/partials/_animation.scss */
+.exit {
+  -webkit-animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+          animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+/* line 26, src/scss/partials/_animation.scss */
+.exit-emphasis {
+  -webkit-animation-timing-function: cubic-bezier(0.57, 0.07, 0.6, 1.71);
+          animation-timing-function: cubic-bezier(0.57, 0.07, 0.6, 1.71);
+}
+
+/* line 32, src/scss/partials/_animation.scss */
+.anim-fill-both, .pop, .unpop {
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes pop {
+  0% {
+    -webkit-transform: scale(0.9) translateZ(0);
+            transform: scale(0.9) translateZ(0);
+  }
+  100% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+}
+
+@keyframes pop {
+  0% {
+    -webkit-transform: scale(0.9) translateZ(0);
+            transform: scale(0.9) translateZ(0);
+  }
+  100% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+}
+/* line 46, src/scss/partials/_animation.scss */
+.pop {
+  -webkit-animation-name: pop;
+          animation-name: pop;
+}
+
+@-webkit-keyframes unpop {
+  0% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+  100% {
+    -webkit-transform: scale(0.9) translateZ(0);
+            transform: scale(0.9) translateZ(0);
+  }
+}
+
+@keyframes unpop {
+  0% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+  100% {
+    -webkit-transform: scale(0.9) translateZ(0);
+            transform: scale(0.9) translateZ(0);
+  }
+}
+/* line 60, src/scss/partials/_animation.scss */
+.unpop {
+  -webkit-animation-name: unpop;
+          animation-name: unpop;
+}
+
+/* line 71, src/scss/partials/_animation.scss */
+section {
+  background: #EAFBFF;
+  color: #293241;
+  width: 800px;
+  display: -webkit-flex;
+  display: flex;
+  margin: 60px auto;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+}
+
+/* line 79, src/scss/partials/_animation.scss */
+.demo {
+  background: #F4FEFF;
+  width: 150px;
+  height: 150px;
+  border-radius: 1000px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid rgba(152, 193, 217, 0.6);
+  box-shadow: 1px 2px 3px 1px rgba(152, 193, 217, 0.4);
+  cursor: pointer;
+  -webkit-transform: scale(0.9) translateZ(0);
+          transform: scale(0.9) translateZ(0);
+}
+/* line 91, src/scss/partials/_animation.scss */
+.demo h2 {
+  margin-bottom: 0;
+}
+/* line 95, src/scss/partials/_animation.scss */
+.demo p {
+  line-height: 1.5em;
+  font-size: 14px;
+}
+
 /* Monospaced font for code samples */
 @font-face {
   font-family: "notomono-regular";
@@ -618,12 +824,12 @@ object {
   font-weight: 700;
   font-style: italic;
 }
-/* line 53, src/scss/main.scss */
+/* line 57, src/scss/alternative.scss */
 .container {
   width: 48em;
 }
 
-/* line 58, src/scss/main.scss */
+/* line 62, src/scss/alternative.scss */
 .flexbox-row-forward {
   display: -webkit-flex;
   display: flex;
@@ -631,7 +837,7 @@ object {
           flex-flow: row wrap;
 }
 
-/* line 62, src/scss/main.scss */
+/* line 66, src/scss/alternative.scss */
 .flexbox-row-back {
   display: -webkit-flex;
   display: flex;
@@ -639,7 +845,7 @@ object {
           flex-flow: row-reverse wrap;
 }
 
-/* line 66, src/scss/main.scss */
+/* line 70, src/scss/alternative.scss */
 .flexbox-col-forward {
   display: -webkit-flex;
   display: flex;
@@ -647,7 +853,7 @@ object {
           flex-flow: column wrap;
 }
 
-/* line 70, src/scss/main.scss */
+/* line 74, src/scss/alternative.scss */
 .flexbox-col-back {
   display: -webkit-flex;
   display: flex;
@@ -655,14 +861,14 @@ object {
           flex-flow: column-reverse wrap;
 }
 
-/* line 74, src/scss/main.scss */
+/* line 78, src/scss/alternative.scss */
 .flex-item {
   -webkit-flex: 1 0 auto;
           flex: 1 0 auto;
 }
 
 /* Column predefined classes */
-/* line 80, src/scss/main.scss */
+/* line 84, src/scss/alternative.scss */
 .columns-2 {
   -webkit-column-count: 2;
      -moz-column-count: 2;
@@ -678,7 +884,7 @@ object {
           column-span: none;
 }
 
-/* line 84, src/scss/main.scss */
+/* line 88, src/scss/alternative.scss */
 .columns-3 {
   -webkit-column-count: 3;
      -moz-column-count: 3;
@@ -694,7 +900,7 @@ object {
           column-span: none;
 }
 
-/* line 88, src/scss/main.scss */
+/* line 92, src/scss/alternative.scss */
 .columns-20em-fixed {
   -webkit-column-width: 20em;
      -moz-column-width: 20em;
@@ -710,7 +916,7 @@ object {
           column-span: none;
 }
 
-/* line 92, src/scss/main.scss */
+/* line 96, src/scss/alternative.scss */
 .columns-10em-fixed {
   -webkit-column-width: 10em;
      -moz-column-width: 10em;
@@ -920,4 +1126,4 @@ object {
 
 
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=alternative.css.map */

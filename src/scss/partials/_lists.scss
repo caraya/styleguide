@@ -1,0 +1,16 @@
+ul.custom,
+ul.custom ul {
+  list-style-type: none;
+}
+
+ul.custom li:before {
+  content: '\2192';
+  margin-left: -2.5rem;
+  position: absolute;
+}
+
+ul.custom ul li:before {
+  content: '\2192';
+  margin-left: -1.5rem;
+  position: absolute;
+}
